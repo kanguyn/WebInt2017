@@ -1,0 +1,196 @@
+body{
+	
+	background-color: #b3b3ff;
+	font-family: Verdana, Arial, sans-serif, serif;
+	color:black;
+}
+header{
+	color: #000066;
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.7em;
+}
+nav{
+	background-color: #000066;
+	padding: 1em 0.5em;
+}
+nav a {
+	color:white;
+	text-decoration: none;
+	padding: 1em 3em;
+}
+nav a:hover {
+	background-color: #003366;
+}
+
+
+section{
+}
+
+section article{
+	border: 0.2em ;
+	background-color: #ccccff;
+	border-radius: 0.8em;
+	font-size: small;
+	text-align: justify;
+	width: 70em;
+	padding: 0.6em;
+	margin-left: 4em;
+	margin-top: 5em;
+	margin-bottom: 3em;
+	
+}
+section h1{
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	padding: 0;
+}
+.line{
+	text-align: center;
+	padding-top: 1em;
+}
+.line:after{
+    content:' ';
+    display:block;
+    border:0.05em solid black;
+}
+article{
+	border-right: 0.2em solid #c2c2a3;
+	margin-left: 1em;
+}
+article h1{
+	text-align: center;
+	text-transform: none;
+	letter-spacing:0;
+}
+article h2{
+	text-align: center;
+	font-size:small;
+	text-transform: uppercase;
+	padding: 1em;
+}
+
+aside{
+	text-align: justify;
+	font-size: small;
+	float: right;
+	width: 22%;
+	margin-right: 2em;
+}
+aside h1{
+	padding-top: 7em;
+	font-size: small;
+	font-weight: bold;
+}
+aside h2{
+	padding-top: 8em;
+	font-size:small;
+	text-transform: uppercase;
+}
+
+footer{
+	font-size: x-small;
+	text-align: center;
+}
+
+
+img{
+	display: block;
+	margin: auto;
+	width: 40em;
+	height: auto;
+	border: 0.3em solid #666699;
+}
+
+video{
+	display: block;
+	width: 40em;
+	height: auto;
+	margin: auto;
+}
+
+form{
+	text-align: center;
+}
+
+button{
+	font-family: Verdana, serif;
+	font-size: 90%;
+	text-align: center;
+	background-color: #00004d;
+	color: white;
+	letter-spacing: 0.07em;
+	border-radius: 1em;
+	padding: 0.5em 1em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0.5em;
+
+}
+button:hover {
+    background-color: #333399;
+}
+button:active {
+    background-color: #333399;
+    transform: translateY(0.15em);
+}
+article button {
+	
+}
+
+input{
+	display: block;
+	margin: auto;
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+}
+
+p a {
+	text-decoration: none;
+	font-weight: bold;
+}
+#currentlocation{
+	text-align: center;
+}
+
+#map-canvas {
+	margin: auto;
+	padding: 1em;
+	height: 28em;
+	width:50%;
+	max-width: none;
+	margin-top: 4%;
+}
+#map-canvas img {
+	max-width: none !important;
+}
+#video2{
+	display: block;
+	margin: auto;
+	border-radius: 100%;
+}
+.video_rotate
+{
+	transform: rotate(20deg);
+}
+canvas{
+	padding-top: 1em;
+	display: inline-block;
+}
+.mycanvas{
+}
+.mycanvas2{
+}
+#canvasdiv{
+	margin: auto;
+	display: block;
+}
+.currentplay{
+	text-align: center;
+	text-transform: uppercase;
+}

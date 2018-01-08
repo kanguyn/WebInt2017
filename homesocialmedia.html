@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My Social Media . Home</title>
+</head>
+	<body>
+		<header>My Social Media</header>
+		
+
+		<nav>
+            <a href="#home" class="normalmenu">Home</a>
+            <a href="#news" class="normalmenu">News</a>           
+            <a href="#mymedia">My Media</a>
+            <a href="#mygroups">My Groups</a>
+            <a href="#myfriends">My Friends</a>
+            </div>
+            
+        </nav>
+
+
+        <section class="writtenposts">
+            <h1 class="line">My Posts</h1>
+            
+            <aside>
+            <h1>Comments</h1>
+            <p><a href="#">Romain Dupont</a>: Nice form !</p>
+            </aside>
+            <article>
+                <h1>My Post 1</h1>
+                <form>
+                    <h2>&bull; Keep in Touch &bull;</h2>
+                    <input type="text" placeholder="Your first name is" name="FirstName"> <br>
+                    <input type="text" placeholder="Your last name is" name="LastName"> <br>
+                    <input type="email" placeholder="Your email is" name="email"> <br>
+                    <input type="number" placeholder="Your phone number is" name="phone_nb"><br> <br>
+                    <button type="button" id="send">Send</button> <br>
+                </form>
+            
+            </article>
+
+            <aside>
+            <h1>Comments</h1>
+            <p><a href="#">Alexia Martin</a>: Useful map. Thank you.</p>
+            <p><a href="#">Niels Saunders</a>: I do not like when the website ask for my location.</p>
+            </aside>
+            <article>
+                <h1>My Post 2: Geolocation</h1>
+                <p id="currentlocation">Please, click to get you current location
+                <button id="getLocation">Your Current Location</button>
+                </p>
+                <form id=form2>
+                    <h2>&bull; Enter Your Address &bull;</h2>
+                    <input id="street" placeholder="Street" type="text" name="Street"> <br>
+                    <input id="city" placeholder="City" type="text" name="city"> <br>
+                    <input id="zipcode" placeholder="Zipcode" type="number" name="zipcode"> <br>
+                    <input id="country" placeholder="Country" type="text" name="Country"><br> <br>
+                    <button type="button" id="searchAddress">Search</button>
+
+                </form>
+
+               
+                <div id="map-canvas"></div>
+              
+                
+                
+            </article>
+
+            <aside>
+            <h1>Author</h1>
+            <p><a href=#>Cicero</a></p>
+
+            </aside>
+            <article>
+                <h1>My Post 3</h1>
+                <p>Lorem ipsum dolor sit amet, pri cu utamur hendrerit torquatos. Eum et scripta eruditi placerat, lorem scribentur ad duo, et ius liber efficiendi. Tantas facete aliquid te quo. Ius ut errem omittam repudiandae. Lorem verterem has ea. Meis nemore oblique no has.</p>
+                <p>Iudico dissentiet per et, ne atqui falli hendrerit cum. Sed melius oporteat in. Ei sit constituam deterruisset, ei est probo eripuit tincidunt. Ne mea eros soleat, graeco iriure eu sea. Ex democritum constituto pri, vix agam case nominavi te.</p>
+                <p>Eum causae scripta minimum an, aliquid ceteros convenire eos ut. Iudico docendi quo at. Id consul fabulas interesset usu, odio malis essent vim ex. Cum ei populo torquatos, ridens euripidis has ut, in suas probo moderatius per. Eu quo graecis erroribus percipitur, et ius atqui semper.</p>
+            
+            </article>
+
+            
+
+        </section>
+     
+
+        <section class="images">
+            <h1 class="line">My Images</h1>
+
+            <aside>
+            <h1>Comments</h1>
+            <p><a href="#">Paul Long</a>: Nice trip ! Your photos make me want to go there next year.</p>
+
+            </aside>
+
+            <article>
+                <h2>My Trip in Nepal</h2>
+            <img id="img1" src="https://i.ytimg.com/vi/KypX5vqX34Q/maxresdefault.jpg" alt="Kathmandu Photo" id="Kathmandu" class="floatimg" width="90%" >
+            
+                
+
+            </article>
+
+
+        </section>
+
+
+        <section class="videos">
+            <h1 class="line">My Videos</h1>
+            <aside>
+            <form>
+                
+                <h2>&bull; Play your video &bull;</h2>
+            
+                <input type="url" placeholder="Video URL" name="video url" id="video_url"> <button type="button" id="urlvideo">Play</button><br>
+                <input type="number" placeholder="Starts playing at (s)" name="start video" id="video_start"><button type="button" id="offsetbtn">Play</button>
+                <br>
+                
+                <button type="button" id="preview">Preview the video</button> <br>
+                <button type="button" class="rotateevent">Rotate the video</button> <br>
+                Display default controls
+                <input placeholder="Display default controls" type="checkbox" name="display controls" id="video_controls"><button type="button" id="display_control">Apply</button><br>
+                <button type="button" id="mirror">Mirror the video in a canvas</button> <br>
+                
+                </form>                    
+            </aside>
+
+            <article>
+                <h1>Video 1</h1>
+                <video id="video1" preload="metadata" controls>
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d6/Elaphants_Dream.ogv/Elaphants_Dream.ogv.480p.webm" type="video/webm">
+                    <p>Your browser doesn't support HTML5 video.</p>
+                </video> 
+                <div id="canvasdiv">
+                    <canvas class='mycanvas'></canvas>
+                    <canvas class='mycanvas2'></canvas>
+                </div>
+
+            </article>
+
+            <aside>
+            <h1>Comments</h1>
+            <p><a href="#">Laura Dong</a>: Why Bubble?</p>
+
+            </aside>
+
+            <article>
+                <h1>Video 2: Bubble Shape</h1>
+                
+                <video id="video2" controls preload="metadata" src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d6/Elaphants_Dream.ogv/Elaphants_Dream.ogv.480p.webm">
+                    <p>Your browser doesn't support HTML5 video.</p>
+                </video> 
+            </article>
+
+            <aside>
+            <h1>Comments</h1>
+            <p><a href="#">Maeva Petit</a>: Weird videos. But I like the one with the animals</p>
+
+            </aside>
+            <article>
+                <h1>Video Jukebox Player</h1>
+                <button id="playjukebox">Play / Pause jukebox</button>
+                <button id="playagain">Play again from the beginning</button>
+                <video id="videojukebox" preload="metadata" controls>
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d6/Elaphants_Dream.ogv/Elaphants_Dream.ogv.480p.webm" type="video/webm">
+                    <p>Your browser doesn't support HTML5 video.</p>
+                </video> 
+                <p class="currentplay">Playing video 1/5</p>
+
+            </article>
+
+        </section>
+
+
+
+        <footer>
+            <!-- mettre nom a la fin de la page-->         
+            <p class="name">Kim-Anh-Nhi Nguyen</p>
+        	<p class="lastline">EURECOM . WebInt 2017 . Assignment 3 . Prof: Raphael Troncy</p>
+        </footer>
+
+    <script src="js3.js"></script>  
+	</body>
+</html>
