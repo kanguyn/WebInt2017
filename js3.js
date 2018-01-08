@@ -119,9 +119,6 @@ var playurl = function playurl() {
 btn_url.addEventListener('click', playurl);
 
 var offset = function offset() {
-    video1.setAttribute('class','video1');
-	canvas.setAttribute('class', 'mycanvas');
-    canvas2.setAttribute('class', 'mycanvas2');
 	var offsetTime = document.querySelector("#video_start").value;
     video1.currentTime = offsetTime;
     video1.play();
