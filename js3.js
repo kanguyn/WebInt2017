@@ -171,10 +171,10 @@ btn_mirror.addEventListener('click', function(){
 
 
 
-var nextVideo1 = "https://upload.wikimedia.org/wikipedia/commons/4/41/Big_Buck_Bunny_medium.ogv";
-var nextVideo2 = "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/47/Elephants_Dream_1024.avi.to63.5w720vbr1760soft-targetabr112.ogv/Elephants_Dream_1024.avi.to63.5w720vbr1760soft-targetabr112.ogv.360p.webm";
-var nextVideo3 = "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/21/Making_of_Elephants_Dream_-_title_origin.ogv/Making_of_Elephants_Dream_-_title_origin.ogv.360p.webm";
-var nextVideo4 = "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8c/Making_of_Elephants_Dream_part_2_of_8.ogv/Making_of_Elephants_Dream_part_2_of_8.ogv.360p.webm";
+var nextVideo1 = "https://ia800202.us.archive.org/29/items/CartoonCartoonHeroes/cartooncartoon_512kb.mp4";
+var nextVideo2 = "https://ia801203.us.archive.org/16/items/Bubbles_hosts_Cartoon_Cartoon_Fridays_promo_2000_-/Bubbles_hosts_Cartoon_Cartoon_Fridays_promo_2000_--Rdnvkd0Y6M.mp4";
+var nextVideo3 = "https://ia800205.us.archive.org/25/items/youtube-hJrSJ1WpdEo/Cartoon_Cartoon_Friday_PPG_Clips-hJrSJ1WpdEo.mp4";
+var nextVideo4 = "https://ia800304.us.archive.org/2/items/ParisNight/ParisAtNight_512kb.mp4";
 var videos = [nextVideo1,nextVideo2,nextVideo3,nextVideo4]
 var videoPlayer = document.querySelector('#videojukebox');
 btn_jukebox = document.querySelector("#playjukebox");
