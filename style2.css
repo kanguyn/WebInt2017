@@ -92,7 +92,7 @@ aside h3{
 	font-weight: bold;
 }
 aside h2{
-	padding-top: 8em;
+	padding-top: 40%;
 	font-size:small;
 	text-transform: uppercase;
 }
@@ -117,7 +117,11 @@ video{
 	height: auto;
 	margin: auto;
 }
-
+#video1{
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
 form{
 	text-align: center;
 }
@@ -188,14 +192,18 @@ canvas{
 	display: inline-block;
 }
 .mycanvas{
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 5%;
 }
 .mycanvas2{
+	width: 30%;
+	float: right;
+	padding-bottom: 5%;
 }
 #canvasdiv{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 100%;
+	margin-bottom: 10%;
 }
 .currentplay{
 	text-align: center;
