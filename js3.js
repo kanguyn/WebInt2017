@@ -1,10 +1,14 @@
+/*author: Kim-Anh-Nhi Nguyen*/
+
+/////////////////////////////////first form: submit/////////////////////////////////
+
 var form1 = document.querySelector("#identityform");
 var identity = function identity(){
     alert('Your form has been sent');
 }
 form1.addEventListener('submit',identity);
 
-
+///////////////////////////////// initialize map /////////////////////////////////
 var map;
 var marker;
 var x = document.querySelector("#demo");
