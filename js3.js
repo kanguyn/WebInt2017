@@ -2,7 +2,6 @@ var map;
 var marker;
 var x = document.querySelector("#demo");
 
-google.maps.event.addDomListener(window, 'load', initialize);
 
 function initialize() {
 
