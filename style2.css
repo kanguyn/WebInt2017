@@ -21,6 +21,7 @@ nav a {
 	color:white;
 	text-decoration: none;
 	padding: 1em 3em;
+	display: inline;
 }
 nav a:hover {
 	background-color: #0077b3;
@@ -39,7 +40,7 @@ section article{
 	text-align: justify;
 	width: 68%;
 	padding: 1%;
-	margin-left: 4%;
+	margin-left: 3%;
 	margin-top: 4%;
 	margin-bottom: 1%;
 	
@@ -84,17 +85,18 @@ article h2{
 aside{
 	text-align: justify;
 	font-size: small;
+	display: block;
 	float: right;
 	width: 18%;
-	margin-right: 1%;
+	margin-right: 2%;
 }
 aside h3{
-	padding-top: 7em;
+	padding-top: 55%;
 	font-size: small;
 	font-weight: bold;
 }
 aside h2{
-	padding-top: 40%;
+	padding-top: 6%;
 	font-size:small;
 	text-transform: uppercase;
 }
@@ -108,14 +110,14 @@ footer{
 img{
 	display: block;
 	margin: auto;
-	width: 40em;
+	width: 70%;
 	height: auto;
 	border: 0.3em solid #666699;
 }
 
 video{
 	display: block;
-	width: 40em;
+	width: 70%;
 	height: auto;
 	margin: auto;
 }
@@ -197,12 +199,12 @@ canvas{
 	width: 30%;
 	margin-right: auto;
 	margin-left: auto;
-	padding-bottom: 5%;
+	padding-bottom: 20%;
 }
 .mycanvas2{
 	width: 30%;
 	float: right;
-	padding-bottom: 5%;
+	padding-bottom: 20%;
 }
 #canvasdiv{
 	margin-bottom: 10%;
