@@ -38,10 +38,10 @@ section article{
 	font-size: small;
 	text-align: justify;
 	width: 68%;
-	padding: 0.6em;
-	margin-left: 4em;
-	margin-top: 5em;
-	margin-bottom: 3em;
+	padding: 1%;
+	margin-left: 4%;
+	margin-top: 4%;
+	margin-bottom: 1%;
 	
 }
 section h1{
@@ -86,7 +86,7 @@ aside{
 	font-size: small;
 	float: right;
 	width: 18%;
-	margin-right: 2em;
+	margin-right: 1%;
 }
 aside h3{
 	padding-top: 7em;
