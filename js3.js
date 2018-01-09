@@ -1,3 +1,10 @@
+var form1 = document.querySelector("#identityform");
+var identity = function identity(){
+    alert('Your form has been sent');
+}
+form1.addEventListener('submit',identity);
+
+
 var map;
 var marker;
 var x = document.querySelector("#demo");
@@ -128,8 +135,6 @@ btn_offset.addEventListener('click', offset);
 function drawPreview(v,c,w,h) {
     
     c.drawImage(video1,0,0,w,h);
-    var img = document.createElement("img");
-    img.src = c.toDataURL();
 }
 btn_preview.addEventListener('click', function(){
     drawPreview(video1,context2,cw,ch);
@@ -206,6 +211,6 @@ videoPlayer.addEventListener('ended', function(){
 btn_again.addEventListener('click', function (){
     i=0;
     $('p.currentplay').text('Playing video 1/5');
-    videoPlayer.src = "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d6/Elaphants_Dream.ogv/Elaphants_Dream.ogv.480p.webm";
+    videoPlayer.src = "https://ia801202.us.archive.org/9/items/Cartoon_Cartoon_Fridays_2001_Intro-xiXtBw6oIFo/Cartoon_Cartoon_Fridays_2001_Intro-xiXtBw6oIFo.mp4";
     videoPlayer.play();
 });
