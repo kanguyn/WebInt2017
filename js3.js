@@ -5,7 +5,7 @@
 var form1 = document.querySelector("#identityform");
 var identity = function identity(){
     alert('Your form has been sent');
-}
+};
 form1.addEventListener('submit',identity);
 
 ///////////////////////////////// initialize map /////////////////////////////////
@@ -61,16 +61,16 @@ function createMarker(latlng) {
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
+            x.innerHTML = "User denied the request for Geolocation.";
             break;
         case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
+            x.innerHTML = "Location information is unavailable.";
             break;
         case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
+            x.innerHTML = "The request to get user location timed out.";
             break;
         case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
+            x.innerHTML = "An unknown error occurred.";
             break;
     }
 }
@@ -88,7 +88,7 @@ var searchAddress = function searchAddress() {
       		map.setZoom(15);
 		}
 	});
-}
+};
 button_getaddress.addEventListener('click', searchAddress);
 
 ///////////////////////////////////////////video/////////////////////////////////////////////
@@ -182,7 +182,7 @@ var nextVideo1 = "https://ia800202.us.archive.org/29/items/CartoonCartoonHeroes/
 var nextVideo2 = "https://ia801203.us.archive.org/16/items/Bubbles_hosts_Cartoon_Cartoon_Fridays_promo_2000_-/Bubbles_hosts_Cartoon_Cartoon_Fridays_promo_2000_--Rdnvkd0Y6M.mp4";
 var nextVideo3 = "https://ia800205.us.archive.org/25/items/youtube-hJrSJ1WpdEo/Cartoon_Cartoon_Friday_PPG_Clips-hJrSJ1WpdEo.mp4";
 var nextVideo4 = "https://ia800304.us.archive.org/2/items/ParisNight/ParisAtNight_512kb.mp4";
-var videos = [nextVideo1,nextVideo2,nextVideo3,nextVideo4]
+var videos = [nextVideo1,nextVideo2,nextVideo3,nextVideo4];
 var videoPlayer = document.querySelector('#videojukebox');
 btn_jukebox = document.querySelector("#playjukebox");
 btn_again = document.querySelector("#playagain");
@@ -191,8 +191,9 @@ btn_jukebox.addEventListener('click', function play2(){
     if (videoPlayer.paused || videoPlayer.ended) {
         videoPlayer.play();
     }
-    else
+    else{
         videoPlayer.pause();
+    }
 });
 
 function jumpTo(i) {
