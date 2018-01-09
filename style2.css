@@ -35,7 +35,7 @@ section article{
 	border-radius: 0.8em;
 	font-size: small;
 	text-align: justify;
-	width: 62%;
+	width: 68%;
 	padding: 0.6em;
 	margin-left: 4em;
 	margin-top: 5em;
@@ -62,6 +62,10 @@ section h1{
 article{
 	border-right: 0.2em solid #c2c2a3;
 	margin-left: 1em;
+}
+article p{
+	padding-right: 4em;
+	padding-left: 4em;
 }
 article h1{
 	text-align: center;
