@@ -112,15 +112,14 @@ canvas.width = cw;
 canvas.height = ch;
 canvas2.width = cw;
 canvas2.height = ch;
-// url: https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Elephants_Dream_%28high_quality%29.ogv/Elephants_Dream_%28high_quality%29.ogv.240p.webm
-//https://upload.wikimedia.org/wikipedia/commons/4/41/Big_Buck_Bunny_medium.ogv
+
 var playurl = function playurl() {
     video1.setAttribute('class','video1');
 	canvas.setAttribute('class', 'mycanvas');
     canvas2.setAttribute('class', 'mycanvas2');
 	var videourl = document.querySelector("#video_url").value; // set the url to your video file here
     if (!videourl){
-        
+        alert('Please, put url');
     }
 	video1.setAttribute('src', videourl);
 	video1.load();
