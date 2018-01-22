@@ -4,7 +4,7 @@ $( function() {
     }).disableSelection();
 } );
 
-alert();
+alert("check localStorage");
 // localStorage detection
 function supportsLocalStorage() {
   return typeof(Storage)!== 'undefined';
