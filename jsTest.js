@@ -1,3 +1,20 @@
+alert("check localStorage");
+// localStorage detection
+function supportsLocalStorage() {
+  return typeof(Storage)!== 'undefined';
+}
+
+// Run the support check
+if (!supportsLocalStorage()) {
+  // No HTML5 localStorage Support
+  alert("// No HTML5 localStorage Support");
+  alert(supportsLocalStorage());
+} else {
+  // HTML5 localStorage Support
+  alert(supportsLocalStorage());
+  alert("HTML5 localStorage Support");
+}
+
 function populateStorage() {
   localStorage.setItem('FirstName', document.getElementById('FirstName').value);
   localStorage.setItem('LastName', document.getElementById('LastName').value);
@@ -11,15 +28,10 @@ function setForm() {
   var currentEmail = localStorage.getItem('email');
   var currentPhoneNb = localStorage.getItem('phone_nb');
 
-  document.getElementById('FirstName').value = currentFirstName;
-  document.getElementById('LastName').value = currentLastName;
-  document.getElementById('email').value = currentEmail;
-  document.getElementById('phone_nb').value = currentPhoneNb;
+  document.getElementById('FirstName').innerHTML = currentFirstName;
+  document.getElementById('LastName').innerHTML = currentLastName;
+  document.getElementById('email').innerHTML = currentEmail;
+  document.getElementById('phone_nb').innerHTML = currentPhoneNb;
+
+
 }
-
-
-var form1 = document.querySelector("#identityform");
-var storeForm = function storeForm(){
-	if (!localStorage.getItem)
-m} ;
-form1.addEventListener('submit',populateStorage());

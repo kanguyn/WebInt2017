@@ -3,7 +3,7 @@ $( function() {
         connectWith: ".connectedSortable"
     }).disableSelection();
 } );
-
+/*
 alert("check localStorage");
 // localStorage detection
 function supportsLocalStorage() {
@@ -48,7 +48,7 @@ var storeForm = function storeForm(){
 	if (!localStorage.getItem)
 } ;
 form1.addEventListener('submit',populateStorage());
-
+*/
 /*
 //INUTILE A ENLEVER A LA FIN
 function dragover_handler(ev) {
