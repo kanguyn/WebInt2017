@@ -4,7 +4,7 @@ $( function() {
     }).disableSelection();
 } );
 
-
+alert("localStorage need to be checked");
 // localStorage detection
 function supportsLocalStorage() {
   return typeof(Storage)!== 'undefined';
@@ -14,8 +14,10 @@ function supportsLocalStorage() {
 if (!supportsLocalStorage()) {
   // No HTML5 localStorage Support
   alert("// No HTML5 localStorage Support");
+  alert(supportsLocalStorage());
 } else {
   // HTML5 localStorage Support
+  alert(supportsLocalStorage());
   alert("HTML5 localStorage Support");
 }
 
