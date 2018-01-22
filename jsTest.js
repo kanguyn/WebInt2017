@@ -38,9 +38,8 @@ function setForm() {
 
 var form1 = document.querySelector("#identityform");
 form1.addEventListener('submit', function(){
-	function identity(){
-    	alert('Your form has been sent');
-	};
+	
+    alert('Your form has been sent');
 	populateStorage();
 	setForm();
 });
