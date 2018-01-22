@@ -4,7 +4,7 @@ $( function() {
     }).disableSelection();
 } );
 
-alert("localStorage need to be checked");
+
 // localStorage detection
 function supportsLocalStorage() {
   return typeof(Storage)!== 'undefined';
@@ -21,6 +21,33 @@ if (!supportsLocalStorage()) {
   alert("HTML5 localStorage Support");
 }
 
+function populateStorage() {
+  localStorage.setItem('FirstName', document.getElementById('FirstName').value);
+  localStorage.setItem('LastName', document.getElementById('LastName').value);
+  localStorage.setItem('email', document.getElementById('email').value);
+  localStorage.setItem('phone_nb', document.getElementById('phone_nb').value);
+}
+
+function setForm() {
+  var currentFirstName = localStorage.getItem('FirstName');
+  var currentLastName = localStorage.getItem('LastName');
+  var currentEmail = localStorage.getItem('email');
+  var currentPhoneNb = localStorage.getItem('phone_nb');
+
+  document.getElementById('FirstName').innerHTML = currentFirstName;
+  document.getElementById('LastName').innerHTML = currentLastName;
+  document.getElementById('email').innerHTML = currentEmail;
+  document.getElementById('phone_nb').innerHTML = currentPhoneNb;
+
+
+}
+
+
+var form1 = document.querySelector("#identityform");
+var storeForm = function storeForm(){
+	if (!localStorage.getItem)
+} ;
+form1.addEventListener('submit',populateStorage());
 
 /*
 //INUTILE A ENLEVER A LA FIN
