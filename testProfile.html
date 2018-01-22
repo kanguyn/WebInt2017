@@ -13,13 +13,13 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>My Social Media . Home</title>
 
-    <!--<script>
+    <script>
         $( function() {
             $( "#sortable1, #sortable2" ).sortable({
                 connectWith: ".connectedSortable"
             }).disableSelection();
         } );
-    </script> -->
+    </script>
 </head>
 	<body>
 		<header>My Social Media</header>
@@ -82,7 +82,7 @@
             </aside>
             <article>
                 <h1>My Post 1</h1>
-                <form id="identityform" action="javascript:void(0)">
+                <form id="identityform" onsubmit="populateStorage(); setForm()">
                     <h2>&bull; Keep in Touch &bull;</h2>
                     <input type="text" placeholder="Your first name is" name="FirstName" id="FirstName"> <br>
                     <input type="text" placeholder="Your last name is" name="LastName" id="LastName"> <br>
