@@ -16,22 +16,22 @@ if (!supportsLocalStorage()) {
 }
 
 function populateStorage() {
-  localStorage.setItem('FirstName', document.getElementById('FirstName').value);
-  localStorage.setItem('LastName', document.getElementById('LastName').value);
-  localStorage.setItem('email', document.getElementById('email').value);
-  localStorage.setItem('phone_nb', document.getElementById('phone_nb').value);
+	alert("in populateStorage function");
+	localStorage.setItem('FirstName', document.getElementById('FirstName').value);
+	localStorage.setItem('LastName', document.getElementById('LastName').value);
+	localStorage.setItem('email', document.getElementById('email').value);
+	localStorage.setItem('phone_nb', document.getElementById('phone_nb').value);
 }
 
 function setForm() {
-  var currentFirstName = localStorage.getItem('FirstName');
-  var currentLastName = localStorage.getItem('LastName');
-  var currentEmail = localStorage.getItem('email');
-  var currentPhoneNb = localStorage.getItem('phone_nb');
+	alert("in setForm function");
+	var currentFirstName = localStorage.getItem('FirstName');
+	var currentLastName = localStorage.getItem('LastName');
+	var currentEmail = localStorage.getItem('email');
+	var currentPhoneNb = localStorage.getItem('phone_nb');
 
-  document.getElementById('FirstName').innerHTML = currentFirstName;
-  document.getElementById('LastName').innerHTML = currentLastName;
-  document.getElementById('email').innerHTML = currentEmail;
-  document.getElementById('phone_nb').innerHTML = currentPhoneNb;
-
-
+	document.getElementById('FirstName').innerHTML = currentFirstName;
+	document.getElementById('LastName').innerHTML = currentLastName;
+	document.getElementById('email').innerHTML = currentEmail;
+	document.getElementById('phone_nb').innerHTML = currentPhoneNb;
 }
