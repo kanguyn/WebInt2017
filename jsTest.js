@@ -12,6 +12,10 @@ if (!supportsLocalStorage()) {
   alert(supportsLocalStorage());//True
 }
 
+window.onload = function() {
+	setForm();
+};
+
 function populateStorage() {
 	alert("in populateStorage function");
 	localStorage.setItem('FirstName', document.getElementById('FirstName').value);
