@@ -35,3 +35,12 @@ function setForm() {
 	document.getElementById('email').innerHTML = currentEmail;
 	document.getElementById('phone_nb').innerHTML = currentPhoneNb;
 }
+
+var form1 = document.querySelector("#identityform");
+form1.addEventListener('submit', function(){
+	function identity(){
+    	alert('Your form has been sent');
+	};
+	populateStorage();
+	setForm();
+});
