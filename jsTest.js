@@ -32,7 +32,7 @@ function setForm() {
 	var currentPhoneNb = localStorage.getItem('phone_nb');
 	alert("setForm function found those values: FirstName = " + currentFirstName + "/ LastName = " + currentLastName + "/ email = " + currentEmail + "/ phone_nb = "+ currentPhoneNb);
 
-	document.getElementById('FirstName').innerHTML = currentFirstName;
+	document.getElementById('FirstName').value = currentFirstName;
 	document.getElementById('LastName').innerHTML = currentLastName;
 	document.getElementById('email').innerHTML = currentEmail;
 	document.getElementById('phone_nb').innerHTML = currentPhoneNb;
