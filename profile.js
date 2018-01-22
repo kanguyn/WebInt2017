@@ -4,57 +4,19 @@ $( function() {
     }).disableSelection();
 } );
 
-///local storage ///
-
-(function($) {
-$.fn.donetyping = function(callback){
-	var _this = $(this);
- 	var x_timer;    
-    _this.keyup(function (){
-        clearTimeout(x_timer);
-        x_timer = setTimeout(clear_timer, 1000);
-    }); 
-	
-	function clear_timer(){
-		clearTimeout(x_timer);
-		callback.call(_this);
+var myForm = [];
+function saveForm(){
+	// Take each input's name and value and add it to the array we already created.
+	$('form input[type=text]').each(function(){
+		myForm.push({ name: this.name, value: this.value});
+	});
+}
+function debug(){
+	// Loop through our array and output the values.  These values should reflect what form inputs we have above and what their current values are.
+	for (var i = 0; i < myForm.length; i++) {
+		console.log(myForm[i].name+': '+myForm[i].value);
 	}
 }
-});
-
-/*function to check HTML5 storage support in user browser*/
-function _support_html5_storage() {
-	  try {
-		return 'localStorage' in window && window['localStorage'] !== null;
-	  } catch (e) {
-		return false;
-	  }
-}
-
-/* set item in local storage */
-$("#mytext").donetyping(function (e){
-	if(_support_html5_storage()){
-		localStorage.setItem($(this).attr("id"), $(this).val());
-	}
-});
-
-/*retrive item from local storage*/
-if(_support_html5_storage()){
-	var _textarea = $("#mytext");
-	if($.trim( _textarea.val()) == ''){
-		var stored_item = localStorage.getItem( _textarea.attr("id"));
-		_textarea.val(stored_item);
-	}
-}
-
-//delete local item
-$("button").click(function(e){
-	e.preventDefault();
-	$("#mytext")[0].reset;
-	localStorage.removeItem($("#mytext").attr("id"));
-});
-
-/////////////////////////////////////////////////////////////////////////////
 
 
 /*
