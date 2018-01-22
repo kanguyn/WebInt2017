@@ -45,6 +45,7 @@
             </button>
             </form>
 
+
             <form method="post">
                 <label for"fname">First Name</label>
                 <input name="fname" type="text" size="20">
@@ -52,10 +53,10 @@
                 <input name="mname" type="text" size="20">
                 <label for="lname">Last Name</label>
                 <input name="lname" type="text" size="20">
-                <!-- When the user "submits" data, call the saveForm function and then call the debug function. Do not actually submit anything. -->
-                <button type="button" onclick="saveForm();debug();">Submit</button>
+                <button type="submit" name="Submit">Submit</button>
             </form>
 
+            
             <ul id="sortable1" class="connectedSortable">
                 <li class="ui-state-default">Item 1</li>
                 <li class="ui-state-default">Item 2</li>
