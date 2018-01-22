@@ -1,3 +1,10 @@
+$( function() {
+    $( "#sortable1, #sortable2" ).sortable({
+        connectWith: ".connectedSortable"
+    }).disableSelection();
+} );
+
+alert();
 // localStorage detection
 function supportsLocalStorage() {
   return typeof(Storage)!== 'undefined';
