@@ -12,10 +12,10 @@ if (!supportsLocalStorage()) {
   alert(supportsLocalStorage());//True
 }
 
-/*window.onload = function() {
+window.onload = function() {
 	setForm();
 };
-*/
+
 function populateStorage() {
 	alert("in populateStorage function");
 	localStorage.setItem('FirstName', document.getElementById('FirstName').value);
@@ -42,5 +42,5 @@ var form1 = document.querySelector("#identityform");
 form1.addEventListener('submit', function(){
     alert('Your form has been sent');
 	populateStorage();
-	setForm();
+	//setForm();
 });
