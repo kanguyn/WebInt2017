@@ -12,10 +12,10 @@ if (!supportsLocalStorage()) {
   alert(supportsLocalStorage());//True
 }
 
-window.onload = function() {
+/*window.onload = function() {
 	setForm();
 };
-
+*/
 function populateStorage() {
 	alert("in populateStorage function");
 	localStorage.setItem('FirstName', document.getElementById('FirstName').value);
@@ -33,9 +33,9 @@ function setForm() {
 	alert("setForm function found those values: FirstName = " + currentFirstName + "/ LastName = " + currentLastName + "/ email = " + currentEmail + "/ phone_nb = "+ currentPhoneNb);
 
 	document.getElementById('FirstName').value = currentFirstName;
-	document.getElementById('LastName').innerHTML = currentLastName;
-	document.getElementById('email').innerHTML = currentEmail;
-	document.getElementById('phone_nb').innerHTML = currentPhoneNb;
+	document.getElementById('LastName').value = currentLastName;
+	document.getElementById('email').value = currentEmail;
+	document.getElementById('phone_nb').value = currentPhoneNb;
 }
 
 var form1 = document.querySelector("#identityform");
